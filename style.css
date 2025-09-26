@@ -245,7 +245,7 @@
 
 .temu {
   width: 100%;
-  height: 580px;
+  height: 700px;
 }
 
 .temu:nth-child(1) {
@@ -312,17 +312,7 @@
   margin-bottom: 50px;
 }
 .look p {
-  background: linear-gradient(
-    45deg,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    indigo,
-    violet,
-    red
-  );
+  background: linear-gradient(45deg, red, green, blue, indigo, violet, red);
   background-clip: text;
   color: transparent;
   font-size: 14px;
@@ -391,15 +381,31 @@
 
 .temu:nth-child(3) {
   background-image: url(./watch.png);
-  width: 100%;
-  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
+  justify-content: center;
 }
 
-.counter div {
+.counter {
+  display: flex;
+  width: 322px;
+  height: 146px;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.bomb {
+  width: 152px;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.bomb img {
   width: 27px;
   height: 32px;
-  display: flex;
 }
 
 .temu:nth-child(4) {
@@ -473,4 +479,50 @@
   background-image: url(./card.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.cross {
+  width: 100vw;
+  height: 703px;
+  overflow: scroll;
+}
+
+.rain {
+  display: flex;
+  gap: 16px;
+  width: fit-content;
+}
+
+.cross > div {
+  position: relative;
+  width: 1250px;
+  height: 668px;
+}
+
+.cross > div > img {
+  width: 100%;
+  height: 100%;
+  height: fit-content;
+}
+
+.bullet {
+  width: 100vw;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  margin-inline: 7px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.roll {
+  width: 100vw;
+  height: 236px;
+  padding-top: 20px;
 }
